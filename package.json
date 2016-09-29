@@ -50,7 +50,6 @@
     "digest-brunch": "^1.5.1",
     "eslint": "^3.0.0",
     "eslint-brunch": "^3.9.0",
-    "fastclick": "^1.0.6",
     "html-pages-brunch": "^2.0.0",
     "jasmine-core": "^2.5.0",
     "javascript-brunch": "^2.0.0",
