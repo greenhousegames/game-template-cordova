@@ -1,1 +1,1 @@
-# cordova-template
+# game-template-cordova

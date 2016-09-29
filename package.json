@@ -1,6 +1,6 @@
 {
-  "name": "@greenhousegames/cordova-template",
-  "version": "0.0.1",
+  "name": "@greenhousegames/game-template-cordova",
+  "version": "0.0.0",
   "scripts": {
     "precopy-assets": "(rm -r app/assets/game || true) && mkdir app/assets/game",
     "copy-assets": "cp -R node_modules/@greenhousegames/game-template/dist/assets/ app/assets/game/",
@@ -26,7 +26,7 @@
     "postproduction": "cp -R cordova/www dist/www",
     "cordova-init": "npm run cordova-create && npm run cordova-platform-init",
     "precordova-create": "(rm -r cordova || true)",
-    "cordova-create": "cordova create cordova 'com.greenhousegames.template' 'Template'",
+    "cordova-create": "cordova create cordova 'com.greenhousegames.game-template' 'game-template'",
     "postcordova-create": "cp cordova.config.xml cordova/config.xml && cp -R res cordova/res",
     "cordova-platform-init": "cd cordova; cordova platform add ios --save && cordova platform add android --save",
     "cordova-ios-targets": "cd cordova; cordova run ios --list",
@@ -64,12 +64,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greenhousegames/cordova-template.git"
+    "url": "git+https://github.com/greenhousegames/game-template-cordova.git"
   },
   "author": "Greenhouse Games, LLC",
   "license": "",
   "bugs": {
-    "url": "https://github.com/greenhousegames/cordova-template/issues"
+    "url": "https://github.com/greenhousegames/game-template-cordova/issues"
   },
-  "homepage": "https://github.com/greenhousegames/cordova-template#readme"
+  "homepage": "https://github.com/greenhousegames/game-template-cordova#readme"
 }
