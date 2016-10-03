@@ -1,6 +1,8 @@
 import fs from 'fastclick';
 import firebase from 'firebase';
 import Game from '@greenhousegames/game-template';
+import '@greenhousegames/firebase-game-storage';
+import '@greenhousegames/greenhouse-phaser-plugin';
 
 fs.FastClick.attach(document.body);
 
@@ -11,5 +13,8 @@ const firebaseInst = firebase.initializeApp({
   storageBucket: ''
 });
 
-const game = new Game(firebaseInst, 'game');
+const game = new Game({
+  firebase: firebaseInst,
+  assetPath: 'game'
+});
 game.state.start('boot');
