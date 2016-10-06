@@ -16,9 +16,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.logo {
+.a {
   background-image: url(game-template.png);
   background-position: 0px 0px;
+  width: 1024px;
+  height: 1024px;
+}
+.b {
+  background-image: url(game-template.png);
+  background-position: -1025px 0px;
+  width: 1024px;
+  height: 1024px;
+}
+.logo {
+  background-image: url(game-template.png);
+  background-position: 0px -1025px;
   width: 32px;
   height: 32px;
 }
