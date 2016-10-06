@@ -7,10 +7,11 @@ import '@greenhousegames/greenhouse-phaser-plugin';
 fs.FastClick.attach(document.body);
 
 const firebaseInst = firebase.initializeApp({
-  apiKey: 'AIzaSyAV7icWQMVNXWsqhXSLNb_Zl-fICNc6sFw',
-  authDomain: 'circle-smash.firebaseapp.com',
-  databaseURL: 'https://circle-smash.firebaseio.com',
-  storageBucket: ''
+  apiKey: 'AIzaSyCqcbh9XmZZBahTDxmj4GXbwQny9H9wHdo',
+  authDomain: 'greenhouse-games-test.firebaseapp.com',
+  databaseURL: 'https://greenhouse-games-test.firebaseio.com',
+  storageBucket: '',
+  messagingSenderId: '756331628096'
 });
 
 const game = new Game({
