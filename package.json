@@ -38,10 +38,10 @@
   },
   "dependencies": {
     "@greenhousegames/game-template": "~0.0.1",
-    "@greenhousegames/firebase-game-storage": "~0.0.1",
     "@greenhousegames/greenhouse-phaser-plugin": "~0.0.1",
     "fastclick": "^1.0.6",
     "firebase": "~3.4.0",
+    "firebase-reporting": "~0.0.1",
     "rsvp": "^3.2.1"
   },
   "devDependencies": {
