@@ -5,3 +5,4 @@ cordova
 npm-debug.log*
 firebase-debug.log
 app/assets/game
+app/config.js
