@@ -1,6 +1,6 @@
 {
   "name": "@greenhousegames/game-template-cordova",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "scripts": {
     "precopy-assets": "(rm -r app/assets/game || true) && mkdir app/assets/game",
     "copy-assets": "cp -R node_modules/@greenhousegames/game-template/dist/assets/ app/assets/game/",
