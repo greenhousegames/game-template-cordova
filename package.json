@@ -23,9 +23,8 @@
     "test-only-ios": "cd cordova; cordova emulate ios",
     "test-only-android": "cd cordova; cordova emulate android",
     "test-debug": "karma start --single-run=false --debug",
-    "preproduction": "npm run prebuild && (rm -r dist || true) && mkdir dist",
+    "preproduction": "npm run prebuild",
     "production": "npm run copy-prod-config && brunch build --production",
-    "postproduction": "cp -R cordova/www dist/www",
     "cordova-init": "npm run cordova-create && npm run cordova-platform-init",
     "precordova-create": "(rm -r cordova || true)",
     "cordova-create": "cordova create cordova 'com.greenhousegames.game-template' 'game-template'",
@@ -33,8 +32,9 @@
     "cordova-platform-init": "cd cordova; cordova platform add ios --save && cordova platform add android --save",
     "cordova-ios-targets": "cd cordova; cordova run ios --list",
     "cordova-android-targets": "cd cordova; cordova run android --list",
-    "version": "npm run production && git add -A dist",
-    "postversion": "git push && git push --tags && npm publish"
+    "preversion": "(rm -r dist || true) && mkdir dist && cd dist && mkdir debug && mkdir release",
+    "version": "npm run build && cp -R cordova/www dist/debug/www && npm run production && cp -R cordova/www dist/release/www",
+    "postversion": "git add -A dist && git push && git push --tags && npm publish"
   },
   "dependencies": {
     "@greenhousegames/game-template": "~0.0.1",
