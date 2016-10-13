@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/scss/app.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"cordova/www/css/app.css","sourcesContent":["/* line 1, /Users/brian/GitHub/greenhouse-game-template-cordova/app/scss/app.scss */\nbody {\n  margin: 0; }\n"]}
